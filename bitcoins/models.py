@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+# use this for field help:
+# https://docs.djangoproject.com/en/1.6/ref/models/fields/#model-field-types
+
 class Product(models.Model):
     name = models.CharField(max_length=30)
     company = models.CharField(max_length=30)
